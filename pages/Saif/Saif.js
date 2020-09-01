@@ -5,7 +5,7 @@ import 'react-multi-carousel/lib/styles.css';
 import { initGA } from "./helpers/initGA.js";
 import { MDBRow, MDBCol, MDBContainer, MDBBtn, MDBCollapse, MDBSpinner, MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBIcon} from "mdbreact";
 import Header from "../components/Headers/headersViews/Header";
-import { Link } from "react-router-dom";
+import Link from 'next/link';
 import ImgHeader from "../assets/img/Header/Banner_saif.jpg";
 export default function Saif() {
     React.useEffect(() => {
@@ -264,12 +264,11 @@ export default function Saif() {
                     </MDBCollapse>
                 </MDBRow>
                 <MDBRow >
-                <MDBBtn     className="descargar"
-                            tag={Link}
-                            to={{
-                            pathname: `/descargar`
-                            }}
-                >Descarga <b>SAIF</b> <span>web</span><i class="fas fa-arrow-circle-down icon"></i></MDBBtn>
+                <Link href="/descargar">
+                <MDBBtn     className="descargar">
+                    Descarga <b>SAIF</b> <span>web</span><i class="fas fa-arrow-circle-down icon"></i>
+                </MDBBtn>
+                </Link>
                 </MDBRow> 
           </MDBContainer>
           <ShareFriend

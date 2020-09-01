@@ -7,8 +7,8 @@ import ShareFriend from "../components/Others/shareFriends.js";
 import client from "./helpers/graphqlEndpointFInanzasDigital";
 import { useQuery, useLazyQuery } from "@apollo/react-hooks";
 import { QUERY_DICTAMEN } from "./helpers/graphql/querys";
+import Link from 'next/link';
 
-import { Link } from "react-router-dom";
 export default function InformeFinanciero({ location }) {
   const id = new URLSearchParams(location.search).get("id");
   React.useEffect(() => {
@@ -98,15 +98,12 @@ export default function InformeFinanciero({ location }) {
         <MDBContainer>
           <MDBRow style={{ display: "flex", justifyContent: "space-between" }}>
             <MDBCol>
+              <Link href="/informes">
               <MDBBtn
-                className="btn-color-primary"
-                tag={Link}
-                to={{
-                  pathname: `/informes`
-                }}
-              >
+                className="btn-color-primary">
                 Otras Notas de Prensa
               </MDBBtn>
+              </Link>
             </MDBCol>
             <MDBCol>
               {data && (

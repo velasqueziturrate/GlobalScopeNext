@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { initGA } from "./../helpers/initGA.js";
 import Informe from "./../../components/Cards/CardInforme.js";
-import { Link } from "react-router-dom";
+import Link from 'next/link';
 import {
   MDBBtn,
   MDBCol,
@@ -41,16 +41,14 @@ export default function InformesFinancieros({ informes }) {
           </MDBRow>
         )}
         <MDBRow className="row-button">
+        <Link href="/informes">
           <MDBBtn
             className="btn-round btn-color-primary"
-            tag={Link}
-            to={{
-              pathname: `/informes`
-            }}
           >
             {" "}
             Ver más
           </MDBBtn>
+        </Link>
         </MDBRow>
         <MDBRow></MDBRow>
       </MDBContainer>

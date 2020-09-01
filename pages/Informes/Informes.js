@@ -9,6 +9,7 @@ import { INFORME_BY_YEAR } from "./helpers/graphql/querys";
 import CardInformes2 from "./../components/Cards/CardInforme2";
 import client from "./helpers/graphqlEndpointFInanzasDigital";
 import Select from "react-select";
+
 export default function Informes() {
   const Informes = ({ informes }) =>
     informes.map(informe => (

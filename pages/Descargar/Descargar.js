@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { initGA } from "./helpers/initGA.js";
 import { MDBRow, MDBCol, MDBContainer, MDBBtn,MDBAlert,  MDBCollapse, MDBSpinner, MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBIcon} from "mdbreact";
 import Header from "../components/Headers/headersViews/Header";
-import { Link } from "react-router-dom";
 import Recaptcha from "react-recaptcha";
 import { useMutation } from "@apollo/react-hooks";
 import { MUTATION_CONTACTANOS } from "./helpers/graphql/mutation";

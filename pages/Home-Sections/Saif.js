@@ -1,6 +1,6 @@
 import React from 'react';
 import { MDBBtn, MDBContainer, MDBSpinner, MDBCarousel, MDBCarouselInner, MDBRow, MDBCol, MDBCarouselItem } from 'mdbreact';
-import { Link } from "react-router-dom";
+import Link from 'next/link';
 
 export default function SaifGaleria() {
     return (
@@ -16,20 +16,15 @@ export default function SaifGaleria() {
            <h2 > Sistema Automatizado de Informacion Financiera</h2> 
            <p>Ofrecemos nuestros servicios basados en esta herramienta que permite el análisis para la evaluación de instituciones que componen el mercado financiero, de capitales y de seguro, local y de los países de Iberoamérica.</p>
          < MDBRow className="row-button"> 
+         <Link href="/saif">
              <MDBBtn className="btn-round btn-color-primary borderRadius"
-                         tag={Link}
-                         to={{
-                         pathname: `/saif`
-                         }}
              > Saber más 
              </MDBBtn>
-         </MDBRow>
+        </Link>
+        </MDBRow>
                </MDBCol >
-           </MDBRow>
-              
+        </MDBRow>
             </MDBContainer>
-          
-   
         </section>
     )
 }
