@@ -13,6 +13,11 @@
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
+    "apollo": "^2.30.3",
+    "apollo-client": "^2.6.10",
+    "apollo-server": "^2.17.0",
+    "bootstrap": "^4.5.2",
+    "graphql": "^15.3.0",
     "mdbootstrap": "^4.19.1",
     "next": "^9.5.2",
     "react": "^16.13.1",
