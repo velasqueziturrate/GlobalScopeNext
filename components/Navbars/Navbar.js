@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import Link from 'next/link';
 import Toggler from "./../Navbars/Toggle.js";
 import {
@@ -23,7 +22,7 @@ export default function Navbar() {
   );
   const [collapseOpen, setCollapseOpen] = useState(false);
 
-  // Use effect se carga al iniciar el componente , efectuado cada vez que se renderice el componente
+  // Use effect se carga al iniciar el componente, efectuado cada vez que se renderice el componente
   const closeCollapse = () => {
     document.documentElement.classList.toggle("nav-open");
     setCollapseOpen(false);
@@ -34,31 +33,26 @@ export default function Navbar() {
       {collapseOpen && <div id="bodyClick" onClick={closeCollapse} />}
       <div className="navbar-translate">
         <MDBNavbarBrand id="navbar-brand">
-          <MDBNavLink tag={Link} to={{ pathname: `/` }}>
-            {" "}
-            <img className="GlobalRatingLogo" src={navbarLogo} alt="" />{" "}
-          </MDBNavLink>
+            <Link href="/">
+              <MDBNavLink>
+              <img className="GlobalRatingLogo" src={navbarLogo} alt="logo" />
+              </MDBNavLink>
+            </Link>
         </MDBNavbarBrand>
-
         <Toggler
           onClick={() => {
             document.documentElement.classList.toggle("nav-open");
             setCollapseOpen(!collapseOpen);
           }}
         ></Toggler>
-
         <MDBCollapse id="navbarCollapse3" isOpen={collapseOpen} navbar>
           <MDBNavbarNav right>
             <MDBNavItem active>
-              <MDBNavLink
-                to={{
-                  pathname: `/nosotros`
-                }}
-                tag={Link}
-                onClick={closeCollapse}
-              >
-                Nosotros
-              </MDBNavLink>
+                <Link href="/nosotros">
+                  <MDBNavLink onClick={closeCollapse}>
+                    Nosotros
+                  </MDBNavLink>
+                </Link>
             </MDBNavItem>
             <MDBNavItem>
               <MDBDropdown>
@@ -68,58 +62,42 @@ export default function Navbar() {
                 <MDBDropdownMenu>
                   <MDBDropdownItem
                     className="drop"
-                    to={{
-                      pathname: `/saif`
-                    }}
-                    tag={Link}
-                    onClick={closeCollapse}
-                  >
-                    SAIF
+                    onClick={closeCollapse}>
+                    <Link href="/saif">
+                      SAIF
+                    </Link>
                   </MDBDropdownItem>
                   <MDBDropdownItem
                     className="drop"
-                    to={{
-                      pathname: `/fd`
-                    }}
-                    tag={Link}
-                    onClick={closeCollapse}
-                  >
-                    Finanzas Digital
+                    onClick={closeCollapse}>
+                    <Link href="/fd">
+                      Finanzas Digital
+                    </Link>
                   </MDBDropdownItem>
                   <MDBDropdownItem
                     className="drop"
-                    to={{
-                      pathname: `/consultoria`
-                    }}
-                    tag={Link}
-                    onClick={closeCollapse}
-                  >
-                    Consultoría
+                    onClick={closeCollapse}>
+                    <Link href="/consultoria">
+                      Consultoría
+                    </Link>
                   </MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink
-                to={{
-                  pathname: `/informes`
-                }}
-                tag={Link}
-                onClick={closeCollapse}
-              >
+              <Link href="/informes">
+                <MDBNavLink
+                onClick={closeCollapse}>
                 Prensa
-              </MDBNavLink>
+                </MDBNavLink>
+              </Link>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink
-                to={{
-                  pathname: `/contactanos`
-                }}
-                tag={Link}
-                onClick={closeCollapse}
-              >
-                Contáctanos
-              </MDBNavLink>
+              <Link href="/contactanos">
+                <MDBNavLink
+                onClick={closeCollapse}>Contáctanos
+                </MDBNavLink>
+              </Link>
             </MDBNavItem>
           </MDBNavbarNav>
         </MDBCollapse>
