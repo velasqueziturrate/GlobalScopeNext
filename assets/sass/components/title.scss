@@ -1,0 +1,30 @@
+.title {
+    display: flex;
+    margin-bottom: 1.8rem;
+    max-width: 90%;
+    h1,
+    h2,
+    h3 {
+      font-size: 1.6em;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      font-weight: $font-weight-title;
+      &:after {
+        content: "";
+        height: $height-underline;
+        background: $color-primary;
+        width: calc(100% + 5rem);
+      }
+      @media screen and (max-width: 992px) {
+        font-size: 1.5em;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 1.4em;
+      }
+      @media screen and (max-width: 576px) {
+        font-size: 1.3em;
+      }
+    }
+  }
+  

@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: -apple-system, "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2d2d2d;
+  overflow-x: hidden;
+}
+
+//variables
+@import "./variables.scss";
+
+//mixins
+@import "./mixins/index.scss";
+
+//views
+@import "./views/contactanos.scss";
+@import "./views/consultoria.scss";
+@import "./views/descargar.scss";
+@import "./views/fd.scss";
+@import "./views/home.scss";
+@import "./views/informes.scss";
+@import "./views/nosotros.scss";
+@import "./views/saif.scss";
+@import "./views/noticias.scss";
+@import "./views/informe.scss";
+
+
+//components
+@import "./components/alert.scss";
+@import "./components/button.scss";
+@import "./components/CardInforme.scss";
+@import "./components/CardInforme2.scss";
+@import "./components/CardNoticias.scss";
+@import "./components/footer.scss";
+@import "./components/header.scss";
+@import "./components/gallery.scss";
+@import "./components/headerView.scss";
+@import "./components/input.scss";
+@import "./components/mainHeader.scss";
+@import "./components/modal.scss";
+@import "./components/modalGallery.scss";
+@import "./components/navbar.scss";
+@import "./components/pill.scss";
+@import "./components/saif.scss";
+@import "./components/scrollBar.scss";
+@import "./components/select.scss";
+@import "./components/shareFriend.scss";
+@import "./components/spinners.scss";
+@import "./components/switch.scss";
+@import "./components/title.scss";
+@import "./components/toggle.scss";

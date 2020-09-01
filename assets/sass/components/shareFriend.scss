@@ -1,0 +1,17 @@
+.rowCompartir {
+  display: flex;
+  justify-content: flex-end;
+  .btn {
+    i {
+      color: $color-primary;
+    }
+    &:focus {
+      box-shadow: none;
+      opacity: 0.9;
+    }
+  }
+  .btn-color-primary {
+    margin-left: 0.5rem;
+    margin-top: 1.2rem;
+  }
+}

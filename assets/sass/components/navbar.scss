@@ -1,0 +1,90 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 500;
+  width: 100%;
+  background: $navbar-color;
+  transition: background 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: $navbar-padding-base;
+  padding-bottom: $navbar-padding-base;
+  box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.3),
+    0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+
+  .drop {
+    color: #000000;
+  }
+
+  .navbar-translate {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: $max-width;
+  }
+  .GlobalRatingLogo {
+    width: $width-logo;
+    @include transition(0.2s, ease-in-out);
+    @media screen and (max-width: 991px) {
+      width: 9rem;
+    }
+  }
+
+  a {
+    outline: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    vertical-align: middle;
+    color: #ffffff;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: rgb(226, 224, 224);
+    }
+  }
+
+  p {
+    display: inline-block;
+    margin: 0;
+    line-height: 21px;
+    font-weight: inherit;
+    font-size: inherit;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @include navbar-collapse();
+
+  .nav-open {
+    .navbar-collapse {
+      opacity: 1;
+      @include transform-translate-x(-60vw);
+    }
+
+    .toggle {
+      padding: 2rem;
+      span {
+        position: absolute;
+        right: 0.5rem;
+        width: 2rem;
+        top: 1rem;
+      }
+      :nth-child(1) {
+        transform: rotate(45deg);
+      }
+      :nth-child(2) {
+        display: none;
+      }
+      :nth-child(3) {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  #bodyClick {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 200vh !important;
+  }
+}

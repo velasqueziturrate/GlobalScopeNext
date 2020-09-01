@@ -1,0 +1,46 @@
+.modal-open {
+    overflow-y: scroll;
+  }
+  
+  .modal {
+    .modal-content {
+      background: rgba(255, 255, 255, 0.95);
+      background: linear-gradient(rgba(255, 255, 255, 0.92), rgb(255, 255, 255));
+      br {
+        display: none;
+      }
+    }
+    .modal-header,
+    .modal-footer {
+      border: none;
+    }
+    .modal-header {
+      margin: 0;
+      height: 3rem;
+      padding: 1rem;
+  
+      .close {
+        margin: 0;
+        padding: 0;
+        color: red;
+      }
+    }
+    .close {
+      color: $color-primary;
+      font-size: 2em;
+    }
+    .title {
+      color: $color-primary;
+    }
+    *:focus {
+      outline: none;
+      border: none;
+    }
+    .date {
+      font-size: 0.9em;
+    }
+  
+    .color {
+      color: $color-primary;
+    }
+  }

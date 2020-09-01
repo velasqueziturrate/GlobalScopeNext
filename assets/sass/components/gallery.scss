@@ -1,0 +1,21 @@
+.item-gallery {
+    cursor:pointer; 
+    margin: 1rem; 
+    padding: .4rem;
+    overflow: hidden;
+    
+    img {
+        
+        @include transition(.3s , linear);
+        max-height: 13rem; 
+       
+    }
+    &:hover {
+        img {transform: scale(1.1)}
+     }
+}
+.carousel-container {
+    margin:0 ;
+    width:100%;
+ 
+}

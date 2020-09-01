@@ -1,0 +1,44 @@
+User-agent: *
+Allow: /
+
+User-agent: GoogleBot
+Allow: /public
+Allow: /
+
+User-agent: GoogleBot-Mobile
+Allow: /public
+Allow: /
+
+User-agent: GoogleBot-Image
+Allow: /public
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /public
+Allow: /
+
+User-agent: Adsbot-Google
+Allow: /public
+Allow: /
+
+User-agent: NinjaBot
+Allow: /public
+Allow: /
+
+User-agent: Bingbot
+Allow: /public
+Allow: /
+
+User-agent: Slurp
+Allow: /public
+Allow: /
+
+User-agent: Teoma
+Allow: /public
+Allow: /
+
+User-agent: naverbot
+Allow: /public
+Allow: /
+
+Sitemap: https://www.glscope.com/sitemap.xml

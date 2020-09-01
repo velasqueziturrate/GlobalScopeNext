@@ -1,0 +1,174 @@
+.page-contact {
+  min-height: 50vh;
+  margin: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background: $color-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (max-width:576px) {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .borderRadius {
+    font-size: 1rem;
+    background: $color-fourth;
+    border: 2px solid $color-fourth;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width:576px) {
+      width: 100%;
+    }
+
+    &:hover {
+      color: $color-fourth;
+      text-shadow: 0 0 1px #ffffff;
+      background: #ffffff;
+      border: 2px solid $color-fourth;
+      opacity: 0.9;
+    }
+  }
+
+  .container {
+    width: 50rem;
+    max-width: 100%;
+    min-height: 50vh;
+    background: #ffffff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+
+    @media screen and (max-width:576px) {
+      margin-top: 10rem
+    }
+
+    .spinner-grow {
+      height: 15rem;
+      width: 15rem;
+      position: relative;
+      top: -9rem;
+
+      @media screen and (max-wdith: 992px) {
+        height: 10rem;
+        width: 10rem;
+      }
+    }
+
+    .SpinerContain {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .col-escribenos {
+@media screen and (max-width:576px) {
+  margin-top: -10rem;
+
+}
+    }
+    .info {
+      background: $color-fourth;
+      position: relative;
+      left: -3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 3rem;
+      border-radius: 2px;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+
+      @media screen and (max-width: 991px) {
+        left: 0;
+
+        .row {
+          h3 {
+            font-size: 1.4em;
+          }
+
+          span {
+            font-size: 0.8em;
+          }
+        }
+      }
+
+      @media screen and (max-width:576px) {
+        bottom: 12rem;
+
+      }
+
+      .row {
+        width: 100%;
+
+        h1 {
+          color: #ffffff;
+          width: 100%;
+          font-weight: 200;
+          font-size: 2em;
+          text-align: justify;
+
+          @media screen and (max-width:576px) {
+            font-size: 1.5em;
+        }
+
+        }
+
+        span {
+          color: #ffffff;
+          font-size: 1em;
+        }
+
+        .elementCoordenadas {
+          margin-bottom: 1rem;
+
+        }
+      }
+
+
+    }
+
+    h3 {
+      color: #444444;
+      width: 100%;
+      margin-bottom: 1.7rem;
+      font-weight: 200;
+      font-size: 2em;
+      text-align: justify;
+
+      @media screen and (max-width:576px) {
+        font-size: 1.5em;
+    }
+    }
+
+    .form {
+      .form-group {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .btn {
+      margin-top: 1rem;
+    }
+  }
+
+  .recapcha {
+    transform: scale(0.8);
+
+    @media screen and (max-width:576px) {
+      display: flex;
+      justify-content: center;
+      transform: scale(0.7);
+    }
+  }
+}

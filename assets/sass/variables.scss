@@ -1,0 +1,47 @@
+/* Color Pallete */
+$background-primary: #FFFFFF;
+$background-secondary: #475CA7;
+$background-button: rgba(0, 255, 139, 0.9);
+$color-primary: #414260;
+$color-secondary: #2699FB;
+$color-firts:rgb(46, 75, 53);
+$color-second:rgba(0, 0, 0, 0.9);
+$color-third: rgb(0, 128, 128);
+$color-fourth: #475CA7;
+$color-fifth: #FFFFFF;
+$color-background: #FFFFFF;
+$color-background2: #f5f5f5;
+$footer-color: #c9c9c9;
+$footer-color-copyrigth: #0e1544;
+
+
+/* Features */
+$font-primary: 'Lato',
+sans-serif;
+$fontsize-title: 2rem;
+$borderRadius: 10px;
+
+//devices
+$mobileS: '320px';
+$mobileM: '375px';
+$mobileL: '425px';
+$tablet: '768px';
+$laptop: '1024px';
+$laptopL: '1440px';
+$desktop: '2560px';
+
+$navbar-color: rgba(0, 0, 0, 0.507);
+
+$navbar-padding-base: 0.625rem;
+$sidenav-background: linear-gradient($color-primary, rgb(56, 56, 56));
+
+$filter-header: linear-gradient(#2c2c393f 50%, rgba(255, 255, 255, 0.65) 70%, rgb(255, 255, 255) 100%);
+
+$color-letter-header: rgb(37, 37, 37);
+$height-header : 75vh;
+
+$width-logo: 10rem;
+$max-width: 60rem;
+
+$height-underline: 3px;
+$font-weight-title: 900;

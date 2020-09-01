@@ -1,0 +1,75 @@
+
+.select {
+   
+    & .Select__control--is-disabled {
+   background-color: white!important;
+   border: none;
+ 
+  
+   }
+   
+   & .Select__control--is-focused {
+   border:none !important; 
+   box-shadow: none !important; 
+   box-sizing: border-box;
+   }
+   
+   & .Select__input {
+   color: black; 
+   }
+   
+   & .Select__dropdown-indicator {
+     color:$color-primary; 
+   }
+ 
+   
+   & .Select__loading-indicator {
+   color: $color-primary; 
+   }
+   
+   & .Select__control {
+   background-color: white; 
+   border: none; 
+   box-sizing: border-box;
+   & .Select__clear-indicator {
+   visibility: hidden;
+   }
+}
+}
+.selectCountry {
+   width:10rem; 
+   & .Select__control--is-disabled {
+       background-color: transparent; 
+       border: none;
+     
+      
+       }
+       
+       & .Select__control--is-focused {
+       border:none !important; 
+       box-shadow: none !important; 
+       box-sizing: border-box;
+       }
+       
+       & .Select__input {
+       color: black; 
+       }
+       
+       & .Select__dropdown-indicator {
+         color:$color-primary; 
+       }
+     
+       
+       & .Select__loading-indicator {
+       color: $color-primary; 
+       }
+       
+       & .Select__control {
+      background-color: transparent; 
+       border: none; 
+       box-sizing: border-box;
+       & .Select__clear-indicator {
+       visibility: hidden;
+       }
+   }
+}

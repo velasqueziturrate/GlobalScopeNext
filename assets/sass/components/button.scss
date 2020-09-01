@@ -1,0 +1,27 @@
+.btn-round {
+  border-radius: 500px;
+}
+.btn-color-primary {
+  background: none;
+  color: $color-fourth;
+  outline: none;
+  border: 2px solid $color-fourth;
+  font-size: 1.05rem;
+  text-decoration: none;
+  &:hover {
+    color: #ffffff;
+    text-shadow: 0 0 1px #ffffff;
+    background: $color-fourth;
+  }
+}
+.btn {
+  //  display: flex;
+  //align-items: center;
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+a:focus {
+  outline: none;
+}

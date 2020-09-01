@@ -1,0 +1,12 @@
+.container-load-posts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(30vh + 5rem);
+  .spinner-border {
+    color: $color-primary;
+    width: 3rem;
+    height: 3rem;
+  }
+}

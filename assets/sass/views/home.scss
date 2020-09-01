@@ -1,0 +1,205 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+
+
+
+}
+
+.homeContainer {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-bottom: 2rem;
+
+  .space {
+    margin-top: 2rem;
+  }
+
+  .borderRadius {
+    border-radius: 10px;
+
+  }
+
+  h1 {
+    font-size: 4em;
+    color: $color-fourth;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    padding-bottom: 2rem;
+
+    @media screen and (max-width:576px) {
+      font-size: 2em;
+      padding-bottom: 0;
+  }
+  }
+
+  h2 {
+    font-size: 2em;
+    color: $color-fourth;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width:576px) {
+      font-size: 1.5em;
+  }
+
+    span {
+      display: inline-block;
+      vertical-align: baseline;
+      zoom: 1;
+      *display: inline;
+      *vertical-align: auto;
+      position: relative;
+      padding: 0 20px;
+
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        /* width: 1000px; */
+        position: absolute;
+        top: 0.73em;
+        background: $color-fourth;
+        border-top: 1px solid $color-fourth;
+      }
+
+      &:before {
+        right: 100%;
+      }
+
+      &:after {
+        left: 100%;
+      }
+    }
+  }
+
+  .saifBanner {
+    margin-top: 4rem;
+    width: 100%;
+    background: #FFFFFF;
+    overflow: hidden;
+
+    /* background: linear-gradient(#FFFFFF, rgba(255,255,255,0.01), #FFFFFF) , url("../../img/Banner/FondoSAIF.jpg") center no-repeat; */
+    .img-banner {
+      width: 130%;
+      position: relative;
+      right: 30%;
+      animation: animationImg 2s linear;
+
+    }
+
+    @keyframes animationImg {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .col-img {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+
+    .gallery {
+      img {
+        margin: 1rem;
+        border-radius: 2px;
+        opacity: .8;
+        @include transition(.3s, ease-in-out);
+
+        &:hover {
+          opacity: 1;
+          transform: scale(1.04);
+        }
+      }
+    }
+
+
+  }
+
+  .informes {
+    margin-top: 4rem;
+    background: #FFFFFF;
+    width: 100%;
+    background: linear-gradient(#FFFFFF, rgb(240, 240, 240));
+
+    h2 {
+
+
+      &:after {
+        content: "";
+        margin-left: 1rem;
+        height: 1px;
+        background: $color-primary;
+        width: 62%;
+
+        @media screen and (max-width:576px) {
+          font-size: 1.5em;
+      }
+      }
+    }
+  }
+
+  .noticias {
+
+    background: #FFFFFF;
+    background: linear-gradient(rgb(240, 240, 240), #FFFFFF);
+    width: 100%;
+
+    h2 {
+
+      @media screen and (max-width:576px) {
+        font-size: 1.5em;
+    }
+
+      &:after {
+        content: "";
+        margin-left: 1rem;
+        height: 1px;
+        background: $color-primary;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.container-load-posts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .spinner-grow {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+.row-button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}

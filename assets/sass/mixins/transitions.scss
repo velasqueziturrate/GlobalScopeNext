@@ -1,0 +1,68 @@
+@mixin box-shadow($shadow...) {
+    -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+            box-shadow: $shadow;
+  }
+  
+  @mixin transition-input-focus-color() {
+      -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      -moz-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      -o-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      -ms-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  
+  @mixin transition($time, $type){
+      -webkit-transition: all $time $type;
+      -moz-transition: all $time $type;
+      -o-transition: all $time $type;
+      -ms-transition: all $time $type;
+      transition: all $time $type;
+  }
+  
+  @mixin transition-on-prop($prop ,$time, $type){
+      -webkit-transition: $prop $time $type;
+      -moz-transition: $prop $time $type;
+      -o-transition: $prop $time $type;
+      -ms-transition: all $time $type;
+      transition: $prop $time $type;
+  }
+  
+  @mixin rotate-180(){
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+  }
+  
+  @mixin transform-scale($value){
+  -webkit-transform: scale($value);
+  -moz-transform: scale($value);
+  -o-transform: scale($value);
+  -ms-transform: scale($value);
+  transform: scale($value);
+  }
+  
+  @mixin transform-translate-x($value){
+       -webkit-transform:  translate3d($value, 0, 0);
+          -moz-transform: translate3d($value, 0, 0);
+          -o-transform: translate3d($value, 0, 0);
+          -ms-transform: translate3d($value, 0, 0);
+          transform: translate3d($value, 0, 0);
+  }
+  
+  @mixin transform-translate-y-dropdown($value) {
+      -webkit-transform:  translate3d(0,$value,0) !important;
+         -moz-transform: translate3d(0,$value,0) !important;
+         -o-transform: translate3d(0,$value,0) !important;
+         -ms-transform: translate3d(0,$value,0) !important;
+         transform: translate3d(0,$value,0) !important;
+  }
+  
+  @mixin transform-translate-y($value){
+       -webkit-transform:  translate3d(0,$value,0);
+          -moz-transform: translate3d(0,$value,0);
+          -o-transform: translate3d(0,$value,0);
+          -ms-transform: translate3d(0,$value,0);
+          transform: translate3d(0,$value,0);
+  }

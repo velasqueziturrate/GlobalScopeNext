@@ -1,0 +1,30 @@
+.toggle {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .toggle {
+    position: fixed;
+    display: flex;
+    z-index: 1050;
+    right: 0;
+    padding: 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 300ms linear;
+    cursor: pointer;
+    span {
+      height: 2px;
+      width: 1.4rem;
+      background: #ffffff;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+      margin: 0.2rem;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      .line2 {
+        width: 60%;
+      }
+    }
+  }
+}

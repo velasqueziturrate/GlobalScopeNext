@@ -1,0 +1,136 @@
+.page-footer {
+/*   padding-top: .3em; */
+  font-size: 0.821em;
+  background: $color-primary; 
+  color: #FFFFFF; 
+
+  
+  .row .col-footer {
+    margin-right: 3rem;
+    margin-top: 1rem;
+    
+      @media screen and (max-width:576px) {
+
+        margin:1rem;
+      }
+  }  
+
+  a{
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: inline-block;
+    margin:0.08rem; 
+  }
+  .links {
+    display: flex;
+  }
+
+  .buttonEmail{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: none;
+    color: #FFFFFF;
+    background: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logoCenter{
+    background: $color-fourth;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4rem;
+        @media screen and (max-width: 576px) {
+          margin-right: 0;
+          margin-bottom: 1rem;
+        }
+  }
+
+  .enlace{
+      color: $color-secondary; 
+  }
+
+  .finanzasDigital {
+      display:inline-block; 
+      background: url("../../img/pic_footerlogoFD_white.png") no-repeat center; 
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+      width:11rem;
+      height:5rem; 
+
+
+     @include transition(.3s , ease-in-out);
+      &:hover{
+        background-image: url("../../img/pic_footerlogoFD_color.png"); 
+     } } 
+
+     .globalRatings{
+      display:inline-block; 
+      background: url("../../img/pic_footerlogoGR_white.png") no-repeat center ; 
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+      width:11rem;
+      height:5rem; 
+
+    @include transition(.3s , ease-in-out);
+      &:hover{
+        background-image: url("../../img/pic_footerlogoGR_color.png"); 
+      } } 
+     
+  .footer-copyright {
+      padding:.5rem;
+      background: $footer-color-copyrigth; 
+      display: flex; 
+      align-items:center;
+      min-height:  4rem;       
+      font-size: 0.7em;
+      color: rgb(255, 255, 255);
+
+  }
+  .container-fluid {
+      max-width: $max-width;
+  }
+    h5 { 
+        color: $color-primary;
+        text-align: justify;
+        font-size: 1em;
+        text-transform: uppercase; 
+        font-weight: 600;
+        margin-bottom:1.9rem;
+    }
+  p {
+       text-align: justify;
+      font-size: .8em;
+  }
+
+  .nav-links {
+      list-style: none; 
+      display:flex; 
+      flex-direction: column; 
+      padding: 0; 
+      text-align: justify; 
+      li {
+          margin:0; 
+          padding: 0; 
+      }
+      li a {
+          margin:.1rem; 
+          padding: 0; 
+          font-size: .8em;
+          color:#FFFFFF
+      }
+
+  }
+
+
+}

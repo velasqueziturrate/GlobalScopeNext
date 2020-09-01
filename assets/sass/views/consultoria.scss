@@ -1,0 +1,64 @@
+.page-consultoria {
+    min-height: 30vh;
+    background: $color-background;
+    padding: 0.8rem;
+    padding-top: 4rem;
+    margin-bottom: 0.7rem;
+
+            @media screen and (max-width:576px) {
+              padding: 1rem;
+              margin: 1rem;
+            }
+
+span{
+  color: $color-fourth; 
+}
+
+.upper{
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+        
+          h1, h2 {
+            font-size: 2em;
+            width:100%; 
+            color: $color-fourth; 
+            position: relative;
+            overflow: hidden;
+            display: flex; 
+            align-items: center;
+
+                        @media screen and (max-width:576px) {
+                            font-size: 1.5em;
+                        }
+        
+               &:after {
+                    content: '';
+                    display: inline-block;
+                    height: 1px;
+                    margin-left: 1rem;
+                    margin-right: 2rem;
+                    background: $color-fourth; 
+                    width: 100%;
+                    @media screen and (max-width:576px) {
+                    margin-left: 1rem;
+                    margin-right: 0.5rem;
+                    }
+                }
+                &:after { left: 100%; }
+        }
+
+      ul {
+        font-size: 1em;
+        padding: 0.2rem;
+        padding-left: 0;
+        p {
+          font-size: 2.5em;
+        }
+      }
+
+      li{
+        margin-bottom: 0.5rem;
+      }
+
+  }

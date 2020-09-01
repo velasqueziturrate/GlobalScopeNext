@@ -1,0 +1,40 @@
+.table-responsive {
+  
+
+    thead {
+      tr {
+        background: $color-primary; 
+        color: #FFFFFF; 
+      }
+    }
+   tbody {
+    tr{
+      background: #FFFFFF;
+      td {
+        max-width: 10rem;
+      }
+      a {
+        color: $color-primary; 
+        font-weight: 600;
+        &:hover{
+          text-decoration: none;
+          text-shadow: 0 0 .2px $color-primary;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    /*  Define the background color for all the ODD background rows  */
+    tr:nth-child(odd){ 
+      background: #FFFFFF;
+    }
+    
+    /*  Define the background color for all the EVEN background rows  */
+    tr:nth-child(even){
+      background: $footer-color;
+    
+    }
+   }
+  
+   } 

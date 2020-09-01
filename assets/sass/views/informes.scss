@@ -1,0 +1,117 @@
+.page-informes {
+  min-height: 100vh;
+  background: $color-background;
+  padding: 0.8rem;
+  margin-bottom: 0.7rem;
+  padding-top: 4rem;
+              @media screen and (max-width:576px) {
+                padding-top: 1rem;
+
+              }
+
+  .bottom {
+    margin-bottom: 2rem;
+  }
+
+
+  .borderRadius {
+    background: $color-fourth;
+    padding-top: 0;
+    margin: 2rem;
+
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 0.3rem;
+    outline: none;
+    border: 2px solid $color-fourth;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-fourth;
+      text-shadow: 0 0 1px #FFFFFF;
+      background: #FFFFFF;
+
+    }
+  }
+
+  span {
+    color: $color-fourth;
+  }
+
+  .container {
+
+    .upper {
+      text-transform: uppercase;
+    }
+
+    h1, h2 {
+      font-size: 2em;
+      width: 100%;
+      color: $color-fourth;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+
+                              @media screen and (max-width:576px) {
+                                font-size: 1.5em;
+                                margin-left: 1rem;
+                              }
+
+
+      &:after {
+        content: '';
+        display: inline-block;
+        height: 1px;
+        margin-left: 1rem;
+        background: $color-fourth;
+        width: 57%;
+                            @media screen and (max-width:576px) {
+                              margin-left: 1rem;
+                              margin-right: 1rem;
+                            }
+      }
+
+
+      &:after {
+        left: 100%;
+      }
+
+    }
+
+
+
+    p {
+      font-size: 0.8em;
+      padding: 0.2rem;
+    }
+
+    ul {
+      font-size: 0.8em;
+      padding: 0.2rem;
+      list-style: none;
+      padding-left: 0;
+
+      p {
+        font-size: 1em;
+      }
+    }
+
+    .img-logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding-bottom: 2rem;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

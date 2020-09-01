@@ -1,0 +1,33 @@
+.page-informe {
+  min-height: 100vh;
+  background: $color-background;
+  margin-bottom: 4rem;
+  padding-top: 1.8rem;
+
+  @media screen and (max-width: 576px) {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .title {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .date {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  br {
+    display: none;
+  }
+  .contentHtml {
+    width: 100%;
+  }
+  .btn {
+    white-space: nowrap;
+    margin: 0.5rem;
+    min-width: 5rem;
+  }
+}
